@@ -1,5 +1,7 @@
 import React from 'react';
-import './Option.css'
+import './Option.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Option = ({ option }) => {
     return (
