@@ -28,6 +28,10 @@
     color: orangered;
 }
 
+.active {
+    color: orangered !important;
+}
+
 @media only screen and (max-width: 992px) {
     .navbar-section {
         display: flex;

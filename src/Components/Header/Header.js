@@ -11,9 +11,9 @@ const Header = () => {
                     <h2>quizStore</h2>
                 </div>
                 <div className="nav-bar">
-                    <NavLink to="/topics">Topics</NavLink>
-                    <NavLink to="/statistics">statistics</NavLink>
-                    <NavLink to="/blogs">Blogs</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "active" : undefined} to="/topics">Topics</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "active" : undefined} to="/statistics">statistics</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? "active" : undefined} to="/blogs">Blogs</NavLink>
                 </div>
             </div>
 
