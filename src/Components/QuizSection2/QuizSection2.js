@@ -14,6 +14,16 @@ const QuizSection2 = ({ quizQuestion }) => {
     const notify = (id) => {
         toast(`Correct Answer is : ${correctAnswer}`)
     };
+    const rightAnswerHandler = (id) => {
+        const getId = document.getElementById(id);
+        const innerValue = getId.value;
+        if (innerValue === correctAnswer) {
+            toast('Correct answer');
+        }
+        else {
+            toast('Wrong answer')
+        }
+    }
 
     return (
 
@@ -33,6 +43,7 @@ const QuizSection2 = ({ quizQuestion }) => {
                 {
                     options.map(option => <Option
                         option={option}
+                        rightAnswerHandler={rightAnswerHandler}
                     ></Option>)
                 }
             </div>

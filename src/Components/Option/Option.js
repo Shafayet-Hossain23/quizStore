@@ -1,13 +1,14 @@
 import React from 'react';
 import './Option.css';
-import { ToastContainer, toast } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
 
-const Option = ({ option }) => {
+const Option = ({ option, rightAnswerHandler }) => {
+
     return (
         <div>
-            <div>
-                <input type="radio" id={option} name="fav_language" value={option} />
+            <div >
+                <input onClick={() => rightAnswerHandler(`${option}`)} type="radio" id={option} name="fav_language" value={option} />
                 <label for={option}>{option}</label>
             </div>
         </div>
