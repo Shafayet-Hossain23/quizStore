@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Option from '../Option/Option';
 import './QuizSection2.css';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faEye } from '@fortawesome/free-solid-svg-icons'
 
 const QuizSection2 = ({ quizQuestion }) => {
     // console.log(question)
@@ -11,11 +11,12 @@ const QuizSection2 = ({ quizQuestion }) => {
     return (
 
         <div className='single-question-container'>
-            <div>
-                <h3>{question} </h3>
-                <button>
-                    <FontAwesomeIcon></FontAwesomeIcon>
+            <div >
+                <button className='btn-eye'>
+                    <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                 </button>
+                <h3 className='question-title'>{question} </h3>
+
             </div>
             <div className='option-container'>
                 {

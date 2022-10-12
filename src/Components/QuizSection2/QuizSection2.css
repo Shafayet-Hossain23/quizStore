@@ -5,7 +5,22 @@
 
 .single-question-container {
     box-shadow: rgba(117, 17, 100, 0.2) 0px 8px 24px;
-    padding: 20px;
+    padding: 20px 20px 45px 20px;
     margin-bottom: 25px;
     border-radius: 10px;
+}
+
+.question-title {
+    margin-top: 0;
+}
+
+.btn-eye {
+    border: none;
+    background-color: white;
+    margin-left: 95%;
+}
+
+.btn-eye:hover {
+    color: rgb(168, 15, 142);
+    cursor: pointer;
 }
