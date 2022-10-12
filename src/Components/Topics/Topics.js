@@ -11,7 +11,7 @@ const Topics = () => {
     return (
         <div>
             <div className='bg-image'>
-
+                <img src="https://t3.ftcdn.net/jpg/02/31/07/66/360_F_231076694_rxAik9swiCT8WEwHfYXu0noL7K8a382k.jpg" alt="" />
             </div>
             <div className='subjects'>
                 {

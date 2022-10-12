@@ -1,9 +1,10 @@
 import React from 'react';
+import './Error.css'
 
 const Error = () => {
     return (
-        <div>
-            <h1>Error!!!Not Found(404)</h1>
+        <div className='error'>
+            <h1>Error!!! Not Found The Route (404)</h1>
         </div>
     );
 };

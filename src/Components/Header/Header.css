@@ -42,18 +42,25 @@
     .website-name h2 {
         margin: 0px;
         color: white;
-        margin-left: 130px;
+        padding-bottom: 20px;
+        text-align: center;
+
     }
 
     .nav-bar {
-        margin-right: 130px;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+
+
     }
 
     .nav-bar a {
         text-decoration: none;
         color: white;
-        margin-left: 40px;
+        margin-left: 45px;
         font-size: 17px;
+
     }
 
     .nav-bar a:hover {
