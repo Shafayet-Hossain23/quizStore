@@ -18,10 +18,10 @@ const QuizSection2 = ({ quizQuestion }) => {
         const getId = document.getElementById(id);
         const innerValue = getId.value;
         if (innerValue === correctAnswer) {
-            toast('Correct answer');
+            toast(`Correct Answer`);
         }
         else {
-            toast('Wrong answer')
+            toast('Wrong Answer')
         }
     }
 
@@ -30,15 +30,16 @@ const QuizSection2 = ({ quizQuestion }) => {
         <div className='single-question-container'>
 
 
-            <div >
-                <button onClick={() => notify(id)} className='btn-eye'>
+            <div>
 
+                <button onClick={() => notify(id)} className='btn-eye'>
                     <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                 </button>
                 <ToastContainer closeButton={false}></ToastContainer>
                 <h3 className='question-title'>{question} </h3>
 
             </div>
+
             <div className='option-container'>
                 {
                     options.map(option => <Option
@@ -47,6 +48,7 @@ const QuizSection2 = ({ quizQuestion }) => {
                     ></Option>)
                 }
             </div>
+
         </div>
     );
 };

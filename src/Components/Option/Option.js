@@ -7,7 +7,7 @@ const Option = ({ option, rightAnswerHandler }) => {
 
     return (
         <div>
-            <div >
+            <div className='option-style' >
                 <input onClick={() => rightAnswerHandler(`${option}`)} type="radio" id={option} name="fav_language" value={option} />
                 <label for={option}>{option}</label>
             </div>

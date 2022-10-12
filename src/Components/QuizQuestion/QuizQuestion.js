@@ -1,14 +1,17 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import QuizSection2 from '../QuizSection2/QuizSection2';
-import './QuizQuestion.css'
+import './QuizQuestion.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const QuizQuestion = () => {
     const getLodingData = useLoaderData();
     const name = getLodingData.data.name
     // console.log(AllData)
     const questions = getLodingData.data.questions
-    console.log(questions)
+    // 
+
 
     return (
         <div className='quiz-question-container'>
@@ -21,9 +24,11 @@ const QuizQuestion = () => {
                     questions.map(question => <QuizSection2
                         key={question.id}
                         quizQuestion={question}
+
                     ></QuizSection2>)
                 }
             </div>
+
         </div>
     );
 };
