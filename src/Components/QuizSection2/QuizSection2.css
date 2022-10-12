@@ -1,0 +1,11 @@
+.option-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.single-question-container {
+    box-shadow: rgba(117, 17, 100, 0.2) 0px 8px 24px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}

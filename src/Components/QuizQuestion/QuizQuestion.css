@@ -1,0 +1,13 @@
+.quiz-question-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 30px;
+    margin-bottom: 62px;
+}
+
+.topic-name {
+    text-align: center;
+    color: rgb(115, 31, 115);
+}
+
+.question-container {}
